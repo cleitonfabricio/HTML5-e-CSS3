@@ -11,6 +11,7 @@
         table {
             width: 450px;
             border-collapse: collapse;
+            position: relative;
         }
         caption {
             font-size: 1.4em;
@@ -25,6 +26,11 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
         }
         tbody > tr:nth-child(odd) {
             background-color: white;
